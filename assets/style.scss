@@ -16,6 +16,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+  // Prevents page scrolling slightly on refresh
+  overflow-anchor: none;
+}
+
 html {
   font-size: 100%;
   height: 100%;
