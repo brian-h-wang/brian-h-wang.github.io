@@ -9,7 +9,7 @@
 
 .profile-picture {
   max-width: 240px;
-  //height: 100%;
+  height: 100%;
   //float: left;
   //margin: 0 40px 40px 40px;
   border-radius: 8px;
@@ -41,17 +41,11 @@
 
 }
 
-.flex-parent {
+.flexbox-intro {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
-  //@include mobile {
-  //  flex-direction: column;
-  //}
-  //justify-content: center;
-  //align-items: center;
   clear: both;
   margin: 0 40px 40px 40px;
 }
@@ -63,11 +57,90 @@
   padding: 1em;
 }
 
-.research table {
+.research {
+  table, tr, td {
+    //border-collapse: collapse;
+    border: none;
+  }
+
+  img {
+    max-width: 400px;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  td h3 {
+    color: $spaceCadet;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  td p {
+    color: $coolGrey;
+    text-align: left;
+  }
 }
 
-.research td p {
-  color: $coolGrey;
+.projects-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  clear: both;
+  margin: 0;
+  //border-bottom: 1px solid $coolGrey;
+  padding: 60px 0;
+
+  img {
+    flex-basis: 200px;
+    flex-grow: 1;
+    max-width: 400px;
+    border: 4px solid $darkGray;
+    border-radius: 6px;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+
+  align-items: start;
+}
+
+//.projects-row:first-of-type {
+//  border-top: 1px solid $coolGrey;
+//}
+
+.project-description {
+  flex-basis: 400px;
+  flex-grow: 2;
+  margin-left: 2rem;
+  padding-top: 0;
+  h3 {
+    font-weight: 200;
+    text-align: left;
+    border-bottom: 1px solid $spaceCadet;
+    background: $spaceCadet;
+    color: $coolGrey;
+    border-radius: 4px;
+    border-left: 4px solid $coolGrey;
+    padding-left: 20px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  p {
+    color: $coolGrey;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  vertical-align: top;
+
+
+}
+
+.citation {
+   font-size: 0.8rem;
 }
 
 #recent-news {
@@ -83,8 +156,13 @@
   color: $spaceCadet;
 }
 
+
 #about-me {
-  background: $aliceBlue;
+  //min-height: 240px;
+  font-size: 20px;
+  font-weight: 300;
+  //flex-basis: 400px;
+  margin: 0 40px 40px 40px;
 }
 
 
