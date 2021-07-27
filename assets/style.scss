@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "homepage";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -32,14 +33,14 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 960px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $darkerGray;
+  color: $spaceCadet;
   font-weight: bold;
 
   line-height: 1.7;
@@ -237,11 +238,11 @@ p > img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $aliceBlue;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $aliceBlue;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -266,11 +267,15 @@ p > img {
 
 .wrapper-masthead {
   margin-bottom: 25px;
+  //background: $spaceCadet;
 }
+
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 2px solid $spaceCadet;
+  //color: $coolGrey;
+  //border-bottom: 1px solid $coolGrey;
 
   @include mobile {
     text-align: center;
@@ -306,7 +311,7 @@ p > img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $spaceCadet;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -353,6 +358,11 @@ nav {
       margin: 0 10px;
       color: $blue;
     }
+
+    &:active, &:hover {
+      text-decoration: underline;
+    }
+
   }
 }
 
@@ -414,27 +424,49 @@ nav {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 89px;
-  background-color: $lightGray;
+  //height: 89px;
+  //background-color: $lightGray;
+  background-color: #273043;
+  border-top: 1px solid darkgray;
 }
+
 
 footer {
   padding: 20px 0;
+  //color: #EFF6EE;
+  color: #9197AE;
   text-align: center;
 }
 
+.footer-attribution {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.footer-attribution a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover, &:active {
+    text-decoration: underline;
+    text-decoration-width: 2px;
+  }
+}
+
+
 body:after {
-    background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
-    width: 100%;
-    height: 5px;
-    top: 0;
-    position: absolute;
-    left: 0;
-    content: '';
+  //background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
+  width: 100%;
+  height: 5px;
+  top: 0;
+  position: absolute;
+  left: 0;
+  content: '';
 }
 
 #bar {
-    background: #000;
+    //background: #000;
     height: 7px;
     background-size: cover;
     background-position: left 60%;
@@ -1135,7 +1167,6 @@ Modules - reusable parts of our design
     transform: translateX(0);
   }
 }
-
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

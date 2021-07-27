@@ -10,7 +10,7 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
     <meta name="theme-color" content="#000000">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
+<!--    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">-->
     {% include analytics_head.html %}
   </head>
 
@@ -20,7 +20,7 @@
       <div class="wrapper-masthead">
         <div class="container">
           <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+<!--            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>-->
 
             <div class="site-info">
               <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -29,10 +29,8 @@
 
             <nav>
               <a href="{{ site.baseurl }}/">Home</a>
-              <a href="{{ site.baseurl }}/getting-started">Getting Started</a>
-              <a href="{{ site.baseurl }}/search">Search</a>
-              <a href="{{ site.baseurl }}/about">About</a>
-              <a href="{{ site.baseurl }}/archive">Archive</a>
+<!--              <a href="{{ site.baseurl }}/getting-started">Getting Started</a>-->
+              <a href="{{ site.baseurl }}/Brian_Wang_CV.pdf">CV</a>
             </nav>
           </header>
         </div>
@@ -47,7 +45,10 @@
       <div class="wrapper-footer">
         <div class="container">
           <footer class="footer">
-            {% include svg-icons.html %}
+                {% include svg-icons.html %}
+              <div class="footer-attribution">
+                  Website adapted from <a href="https://github.com/amitmerchant1990/reverie">Reverie</a>.
+              </div>
           </footer>
         </div>
       </div>

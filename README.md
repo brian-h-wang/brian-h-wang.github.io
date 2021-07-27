@@ -132,3 +132,16 @@ reverie - _a state of being pleasantly lost in one's thoughts; a daydream._<br><
 ## License
 
 MIT
+
+
+# Notes
+
+## Serving the site locally
+
+Reference: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+
+To start the server, run: ``bundle exec jekyll serve``
+
+## Notes from installation
+
+On Mac OS, use Ruby 2.7.4, not the most recent version.
