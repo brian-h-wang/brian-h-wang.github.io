@@ -163,8 +163,9 @@ section:last-child {
 #recent-news {
   background: $aliceBlue;
   clear: both;
-  padding: 1em;
-  margin: 40px 0px 40px;
+  //padding: 1em;
+  padding: 10px 20px 40px;
+  margin: 40px 0px;
   border-radius: 4px;
   color: $spaceCadet;
 }
