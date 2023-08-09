@@ -3,6 +3,7 @@ layout: default
 ---
 
 <!--<article class="page">-->
+
 <head>
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
@@ -14,103 +15,108 @@ layout: default
 </head>
 
 <body>
-<!--  <h1>{{ page.title }}</h1>-->
+    <!--  <h1>{{ page.title }}</h1>-->
 
-<!--<h1>About me</h1>-->
-<div class="flexbox-intro">
+    <!--<h1>About me</h1>-->
+    <div class="flexbox-intro">
 
-    <img class="profile-picture" src="images/brian.jpg" alt="Picture of Brian Wang">
+        <img class="profile-picture" src="images/brian.jpg" alt="Picture of Brian Wang">
 
-    <div class="intro-bio">
-        <p>
-            Hi! My name is Brian, and I'm a Ph.D. candidate in the Autonomous Systems Lab at Cornell University, advised by <a
-                href="https://www.mae.cornell.edu/faculty-directory/mark-campbell">Professor Mark Campbell</a>.</p>
-
-        <p>
-            I research robotic perception and planning in uncertain and unstructured environments.
-        </p>
-
-        <div class="contact">
+        <div class="intro-bio">
             <p>
-                Contact: bhw45 [at] cornell.edu
+                Hi! My name is Brian, and I'm a robotics researcher at <a href="https://www.draper.com/">Draper</a>,
+                where I develop
+                perception and control capabilities for autonomous quadrotor drones.
             </p>
+
+            <p>
+                Previously, I completed my Ph.D. in 2022 in the Autonomous Systems Lab at Cornell University, where I
+                was advised by <a href="https://campbell.mae.cornell.edu/">Professor Mark Campbell</a>.
+                My research at Cornell focused on robotic perception and planning in uncertain and unstructured
+                environments.
+            </p>
+
+            <div class="contact">
+                <p>
+                    Contact: bhw45 [at] cornell.edu
+                </p>
+                <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank"><i
+                        class="svg-icon linkedin"></i></a>
+                <a href="https://github.com/{{ site.footer-links.github }}" target="_blank"><i
+                        class="svg-icon github"></i></a>
+                <a href="https://youtube.com/{{ site.footer-links.youtube }}" target="_blank"><i
+                        class="svg-icon youtube"></i></a>
+            </div>
+
         </div>
-
     </div>
-</div>
 
-<!--<div class="flex-parent">-->
+    <!--<div class="flex-parent">-->
     <div class="container" id="recent-news">
-        <h1>Recent News</h1>
+        <h1>News</h1>
         <ul>
+            <li>In February 2022, I joined the Autonomy and Real-Time Planning group at <a
+                    href="https://www.draper.com/">Draper</a>
+                as a senior robotics researcher!</li>
             <li>Paper accepted to ICRA 2021! <a href="https://arxiv.org/abs/2103.15967">"Detecting and Mapping Trees in
-                Unstructured Environments with a Stereo Camera and Pseudo-Lidar"</a>.
+                    Unstructured Environments with a Stereo Camera and Pseudo-Lidar"</a>.
             </li>
             <li>I served as the Technical Chair for the third annual <a href="https://www.roboticsdebates.org/">Debates
-                on the Future of
-                Robotics Research</a>, held virtually as a workshop at ICRA 2021.
+                    on the Future of
+                    Robotics Research</a>, held virtually as a workshop at ICRA 2021.
             </li>
         </ul>
     </div>
 
-<!--</div>-->
+    <!--</div>-->
 
-<section class="research">
-    <h1>Research</h1>
+    <section class="research">
+        <h1>Research</h1>
 
-    <p align="center">[<a href="{{ site.baseurl }}/publications">Full publications list</a>]
-        [<a href="https://scholar.google.com/citations?user=-ExLYw0AAAAJ&hl=e">Google scholar profile</a>]
-        [<a href="https://www.youtube.com/channel/UC6-xa50pMUIA2ZTko57Btrw">YouTube channel</a>]</p>
+        <p align="center">[<a href="{{ site.baseurl }}/publications">Full publications list</a>]
+            [<a href="https://scholar.google.com/citations?user=-ExLYw0AAAAJ&hl=e">Google scholar profile</a>]
+            [<a href="https://www.youtube.com/channel/UC6-xa50pMUIA2ZTko57Btrw">YouTube channel</a>]</p>
 
-    <div class="projects-row">
-        <img src="images/tree_detection.gif">
-        <div class="project-description">
-        <h3>Pseudo-lidar 3-D Obstacle Detection</h3>
-        <p>A pipeline for stereo camera-based 3-D object detection, using SLAM point cloud fusion to generate detector training data.</p>
-            <div class="citation"><b>Brian H. Wang</b>, Carlos Diaz-Ruiz, Jacopo Banfi, and Mark Campbell. "Detecting and Mapping Trees in
-                Unstructured Environments with a Stereo Camera and Pseudo-Lidar." IEEE International Conference on Robotics
-                and Automation (ICRA), 2021.</div>
-        <p>
-            [<a href="https://arxiv.org/pdf/2103.15967.pdf">pdf</a>]
-            [<a href="https://github.com/brian-h-wang/pseudolidar-tree-detection">code</a>]
-            [<a href="https://www.youtube.com/watch?v=9kLyd6wyflE">video presentation</a>]</p>
+        <div class="projects-row">
+            <img src="images/tree_detection.gif">
+            <div class="project-description">
+                <h3>Pseudo-lidar 3-D Obstacle Detection</h3>
+                <p>A pipeline for stereo camera-based 3-D object detection, using SLAM point cloud fusion to generate
+                    detector training data.</p>
+                <div class="citation"><b>Brian H. Wang</b>, Carlos Diaz-Ruiz, Jacopo Banfi, and Mark Campbell.
+                    "Detecting and Mapping Trees in
+                    Unstructured Environments with a Stereo Camera and Pseudo-Lidar." IEEE International Conference on
+                    Robotics
+                    and Automation (ICRA), 2021.</div>
+                <p>
+                    [<a href="https://arxiv.org/pdf/2103.15967.pdf">pdf</a>]
+                    [<a href="https://github.com/brian-h-wang/pseudolidar-tree-detection">code</a>]
+                    [<a href="https://www.youtube.com/watch?v=9kLyd6wyflE">video presentation</a>]</p>
+            </div>
         </div>
-    </div>
-    <div class="projects-row">
-        <img src="images/ldls.gif">
-        <div class="project-description">
-            <h3>LDLS: Label Diffusion Lidar Segmentation</h3>
-            <p>Lidar point cloud instance segmentation, using camera information to avoid any need for labeled 3-D training data.</p>
+        <div class="projects-row">
+            <img src="images/ldls.gif">
+            <div class="project-description">
+                <h3>LDLS: Label Diffusion Lidar Segmentation</h3>
+                <p>Lidar point cloud instance segmentation, using camera information to avoid any need for labeled 3-D
+                    training data.</p>
 
-            <div class="citation">
-                <b>Brian H. Wang</b>, Wei-Lun Chao, Yan Wang, Bharath Hariharan, Kilian Q Weinberger, and Mark Campbell.
-                "LDLS: 3-D Object Segmentation Through Label Diffusion From 2-D Images." IEEE Robotics and Automation
-                Letters (RA-L), 2019.
+                <div class="citation">
+                    <b>Brian H. Wang</b>, Wei-Lun Chao, Yan Wang, Bharath Hariharan, Kilian Q Weinberger, and Mark
+                    Campbell.
+                    "LDLS: 3-D Object Segmentation Through Label Diffusion From 2-D Images." IEEE Robotics and
+                    Automation
+                    Letters (RA-L), 2019.
                 </div>
 
-            <p>
-                [<a href="https://arxiv.org/pdf/1910.13955.pdf">pdf</a>]
-                [<a href="https://github.com/brian-h-wang/LDLS">code</a>]
-            </p>
+                <p>
+                    [<a href="https://arxiv.org/pdf/1910.13955.pdf">pdf</a>]
+                    [<a href="https://github.com/brian-h-wang/LDLS">code</a>]
+                </p>
+            </div>
         </div>
-    </div>
 
-</section>
+    </section>
 
-<section class="about-me">
-    <h1>About Me</h1>
-
-    <p>I began my PhD studies at Cornell in 2016. Previously, I received my B.A. in Computer Science, also from Cornell.</p>
-
-    <p>As a PhD student, I've supervised undergraduate and masters' students in the Autonomous Systems Lab, working on projects including autonomous driving algorithms, robotics simulation, and SLAM (Simultaneous Localization and Mapping) based on 3-D object detection landmarks.</p>
-
-    <p>As a teaching assistant for MAE 5180, Autonomous Mobile Robots, I've also instructed Cornell students on fundamental robotics algorithms for estimation (including Kalman and particle filtering), mapping, SLAM, and path planning. I went on to develop course materials, exercises, and animations for the
-        <a href="https://courses.cornell.edu/preview_program.php?catoid=41&poid=20920">upcoming robotics program offered by eCornell</a>.</p>
-
-    <p>During Fall 2019, I interned at <a href="https://www.draper.com/">Draper Laboratory</a> in Cambridge, MA, where I worked on vision-based control for autonomous quadrotor drones.</p>
-
-    <p>When not working I enjoy snowboarding, rock climbing, and going on hikes around Ithaca, NY. I'm also a second degree black belt in Taekwondo, and as a Cornell student I competed in intercollegiate tournaments in the Eastern Collegiate Taekwondo Conference.</p>
-
-</section>
 </body>
 <!--</article>-->
